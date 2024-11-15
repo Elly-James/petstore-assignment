@@ -1,0 +1,245 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #090927;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    counter-reset: section;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+h1, h2, h3, h4 {
+    color: #333;
+    text-align: center;
+    padding: 0.5em;
+}
+
+h3::before {
+    counter-increment: section; /* Increments the counter for each header */
+    content: counter(section) ". "; /* Adds the counter value before each header */
+    font-weight: bold; /* Optional: makes the number bold */
+}
+.container {
+    display: flex;
+    align-items: center; 
+    border: 0px #ccc; /* Adds a border to create a box effect */
+    padding: 10px;
+    max-width: 600px; 
+
+}
+.text {
+    flex: 1;
+}
+
+.nuclear{
+    width: 690px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    background-color: aqua;
+}
+
+h2 {
+    font-size: 1.75em;
+    margin-bottom: 0.4em;
+}
+
+h3, h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+/* Paragraph Styles */
+p {
+    margin: 1em 2em;
+    font-size: 1em;
+    color: #555;
+    justify-content: center;
+}
+
+
+.usa{
+    width: 690px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+.russia{
+    width: 690px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    
+}
+.china{
+    width: 890px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+.india{
+    width: 690px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+.pakistan{
+    width: 690px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+.israel{
+    width: 690px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+.united{
+    width: 690px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+.france{
+    display: block;
+    margin: 0 auto;
+}
+.north{
+    display: block;
+    margin: 0 auto;
+}
+
+/* Table Styles */
+.table h4{
+    text-align: left;
+    margin-left: 70;
+}
+.table {
+    width: 50%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: 70px;
+    
+}
+
+table th, table td {
+    padding: 1em;
+    border: 2px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f970;
+}
+#countries h4{
+    text-align: left;
+    margin-left: 70px;
+}
+#countries ul{
+    text-align: left;
+    margin-left: 70px;
+}
+
+
+#countries h5, iframe{
+    margin-left: 70px;
+}
+
+
+/* Form Styles */
+form {
+    width: 80%;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #e9e9f0;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+    font-weight: bold;
+}
+
+form input[type="email"],
+form input[type="suggestion"],
+form input[type="text"],
+form button {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.resources h4{
+    text-align: left;
+    margin-left: 70px;
+
+}
+.resources a{
+    display: block;
+    margin-left: 70px;
+}
+.resources a:hover{
+    color: #222;
+}
+.resources h6{
+    
+    margin-left: 70px;
+    margin-top: 20px;
+
+}
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer .image-container {
+    max-width: 100px;
+    margin: 1em auto;
+}
+
+footer .content p {
+    margin: 0.5em;
+}
+
+footer .content .author {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.image-container img{
+    width: 100px; /* Adjust as needed */
+    height: 90px;
+
+}
